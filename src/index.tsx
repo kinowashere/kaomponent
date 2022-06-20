@@ -5,7 +5,7 @@ import './index.css';
 
 ReactDOM.render(
   <StrictMode>
-    <Test />
+    <Test isTest />
   </StrictMode>,
   document.getElementById('root')
 );

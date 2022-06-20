@@ -8,6 +8,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
+    'plugin:storybook/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -49,6 +50,13 @@ module.exports = {
     'import/prefer-default-export': [2],
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: ['**/*.stories.*', '**/.storybook/**/*.*'],
+        peerDependencies: true,
+      },
+    ],
   },
   overrides: [
     {
