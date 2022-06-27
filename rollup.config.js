@@ -17,13 +17,13 @@ export default [
       {
         file: packageJson.main,
         format: 'cjs',
-        sourcemap: false,
+        sourcemap: true,
         inlineDynamicImports: true,
       },
       {
         file: packageJson.module,
         format: 'esm',
-        sourcemap: false,
+        sourcemap: true,
         inlineDynamicImports: true,
       },
     ],
