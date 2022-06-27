@@ -4,6 +4,7 @@ import Kaomponent from 'components/Kaomponent';
 import KaomojiEnum from '../../ts/enums/Kaomoji.enums';
 import LanguageEnum from '../../ts/enums/Language.enums';
 import { IKaomponentComponent } from './Kaomponent.component';
+import 'index.css';
 
 export default {
   title: 'Kaomponent',

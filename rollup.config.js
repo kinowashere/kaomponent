@@ -3,7 +3,6 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import json from '@rollup/plugin-json';
-import tailwind from 'rollup-plugin-tailwindcss';
 import postcss from 'rollup-plugin-postcss';
 import dts from 'rollup-plugin-dts';
 
@@ -30,20 +29,19 @@ export default [
     ],
     plugins: [
       postcss({
-        minimize: true,
-        modules: true,
-        use: {
-          sass: null,
-          stylus: null,
-          less: { javascriptEnabled: true },
+        config: {
+          path: './postcss.config.js',
         },
-        extract: true,
+        extensions: ['.css'],
+        minimize: true,
+        inject: {
+          insertAt: 'top',
+        },
       }),
       resolve(),
       commonjs(),
       typescript({ tsconfig: './tsconfig.json' }),
       json(),
-      tailwind({ input: 'index.css' }),
     ],
   },
   {
