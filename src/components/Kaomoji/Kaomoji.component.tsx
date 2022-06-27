@@ -1,5 +1,5 @@
-import KaomojiEnum from 'ts/enums/Kaomoji.enums';
 import React from 'react';
+import KaomojiEnum from '../../ts/enums/Kaomoji.enums';
 
 export interface IKaomojiComponent {
   kaomoji: KaomojiEnum;

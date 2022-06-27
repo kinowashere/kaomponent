@@ -1,8 +1,8 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import Kaomponent from 'components/Kaomponent';
-import Kaomoji from 'ts/enums/Kaomoji.enums';
-import LanguageEnum from 'ts/enums/Language.enums';
+import KaomojiEnum from '../../ts/enums/Kaomoji.enums';
+import LanguageEnum from '../../ts/enums/Language.enums';
 import { IKaomponentComponent } from './Kaomponent.component';
 
 export default {
@@ -17,7 +17,7 @@ const Template: ComponentStory<typeof Kaomponent> = (args: IKaomponentComponent)
 
 export const WithKaomoji = Template.bind({});
 WithKaomoji.args = {
-  kaomoji: Kaomoji.HAPPY,
+  kaomoji: KaomojiEnum.HAPPY,
   lang: LanguageEnum.ES_MX,
   caption: false,
 };

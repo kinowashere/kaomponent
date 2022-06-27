@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import 'utils/i18n';
 import { useTranslation } from 'react-i18next';
-import KaomojiEnum from 'ts/enums/Kaomoji.enums';
 import useKaomoji from 'hooks/useKaomoji';
-import LanguageEnum from 'ts/enums/Language.enums';
 import i18n from 'i18next';
+import LanguageEnum from '../../ts/enums/Language.enums';
+import KaomojiEnum from '../../ts/enums/Kaomoji.enums';
 
 export interface ICaptionComponent {
   kaomoji: KaomojiEnum;

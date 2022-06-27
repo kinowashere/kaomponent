@@ -1,4 +1,4 @@
-import KaomojiEnum from 'ts/enums/Kaomoji.enums';
+import KaomojiEnum from '../ts/enums/Kaomoji.enums';
 
 export interface IUseKaomoji {
   kaomoji: KaomojiEnum;
