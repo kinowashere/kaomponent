@@ -3,7 +3,7 @@ import 'utils/i18n';
 import { useTranslation } from 'react-i18next';
 import KaomojiEnum from 'ts/enums/Kaomoji.enums';
 import useKaomoji from 'hooks/useKaomoji';
-import { LanguageEnum } from 'ts/enums/Language.enum';
+import LanguageEnum from 'ts/enums/Language.enums';
 import i18n from 'i18next';
 
 export interface ICaptionComponent {

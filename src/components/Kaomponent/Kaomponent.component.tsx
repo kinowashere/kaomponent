@@ -1,7 +1,7 @@
 import KaomojiEnum from 'ts/enums/Kaomoji.enums';
 import React, { lazy, Suspense } from 'react';
 import Kaomoji from 'components/Kaomoji';
-import { LanguageEnum } from 'ts/enums/Language.enum';
+import LanguageEnum from 'ts/enums/Language.enums';
 import { useKaomponent } from './Kaomponent.hooks';
 import 'index.css';
 
