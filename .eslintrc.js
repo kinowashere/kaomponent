@@ -60,7 +60,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['src/**/*.hooks.ts', 'src/**/*.config.ts'],
+      files: ['src/**/*.hooks.ts', 'src/**/*.config.ts', 'src/ts/**/*.ts'],
       rules: {
         'import/prefer-default-export': 'off',
       },
