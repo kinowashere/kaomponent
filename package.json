@@ -3,6 +3,13 @@
   "version": "0.0.11",
   "private": false,
   "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/cjs/main.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -29,12 +36,6 @@
     "build-storybook": "build-storybook -s public",
     "rollup": "rollup -c"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts",
   "eslintConfig": {
     "extends": [
       "react-app",
